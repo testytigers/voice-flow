@@ -1,4 +1,0 @@
-module EventSource {
-    header "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/EventSource.build/EventSource-Swift.h"
-    requires objc
-}

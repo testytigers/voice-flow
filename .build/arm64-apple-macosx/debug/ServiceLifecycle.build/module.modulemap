@@ -1,4 +1,0 @@
-module ServiceLifecycle {
-    header "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/ServiceLifecycle.build/ServiceLifecycle-Swift.h"
-    requires objc
-}

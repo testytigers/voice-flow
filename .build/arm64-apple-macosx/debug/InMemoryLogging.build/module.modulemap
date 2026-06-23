@@ -1,4 +1,0 @@
-module InMemoryLogging {
-    header "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/InMemoryLogging.build/InMemoryLogging-Swift.h"
-    requires objc
-}

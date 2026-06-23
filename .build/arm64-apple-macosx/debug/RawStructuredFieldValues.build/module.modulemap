@@ -1,4 +1,0 @@
-module RawStructuredFieldValues {
-    header "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/RawStructuredFieldValues.build/RawStructuredFieldValues-Swift.h"
-    requires objc
-}

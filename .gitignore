@@ -1,2 +1,10 @@
+# Swift Package Manager build artifacts
 .build/
 Package.resolved
+DerivedData/
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~

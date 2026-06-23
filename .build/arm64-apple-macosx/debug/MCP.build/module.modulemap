@@ -1,4 +1,0 @@
-module MCP {
-    header "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/MCP-Swift.h"
-    requires objc
-}

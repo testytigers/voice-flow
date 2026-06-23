@@ -1,4 +1,0 @@
-module NIOSSL {
-    header "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/NIOSSL.build/NIOSSL-Swift.h"
-    requires objc
-}

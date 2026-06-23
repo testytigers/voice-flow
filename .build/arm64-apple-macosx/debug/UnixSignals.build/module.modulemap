@@ -1,4 +1,0 @@
-module UnixSignals {
-    header "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/UnixSignals.build/UnixSignals-Swift.h"
-    requires objc
-}

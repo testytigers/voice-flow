@@ -1,4 +1,0 @@
-module NIOExtras {
-    header "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/NIOExtras.build/NIOExtras-Swift.h"
-    requires objc
-}
