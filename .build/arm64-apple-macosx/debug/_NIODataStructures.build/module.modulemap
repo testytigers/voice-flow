@@ -1,0 +1,4 @@
+module _NIODataStructures {
+    header "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/_NIODataStructures.build/_NIODataStructures-Swift.h"
+    requires objc
+}

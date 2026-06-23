@@ -1,0 +1,4 @@
+module NIOConcurrencyHelpers {
+    header "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/NIOConcurrencyHelpers.build/NIOConcurrencyHelpers-Swift.h"
+    requires objc
+}

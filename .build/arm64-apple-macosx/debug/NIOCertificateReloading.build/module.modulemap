@@ -1,0 +1,4 @@
+module NIOCertificateReloading {
+    header "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/NIOCertificateReloading.build/NIOCertificateReloading-Swift.h"
+    requires objc
+}

@@ -1,0 +1,4 @@
+module NIOFoundationEssentialsCompat {
+    header "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/NIOFoundationEssentialsCompat.build/NIOFoundationEssentialsCompat-Swift.h"
+    requires objc
+}

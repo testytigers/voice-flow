@@ -1,0 +1,4 @@
+module ServiceContextModule {
+    header "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/ServiceContextModule.build/ServiceContextModule-Swift.h"
+    requires objc
+}

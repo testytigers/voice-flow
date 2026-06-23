@@ -1,0 +1,287 @@
+{
+  "": {
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/master.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Authorization/OAuthAuthorizationCodeFlow.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthAuthorizationCodeFlow.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthAuthorizationCodeFlow.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthAuthorizationCodeFlow~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthAuthorizationCodeFlow.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Authorization/OAuthAuthorizer.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthAuthorizer.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthAuthorizer.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthAuthorizer~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthAuthorizer.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Authorization/OAuthClientRegistrar.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthClientRegistrar.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthClientRegistrar.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthClientRegistrar~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthClientRegistrar.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Authorization/OAuthConfiguration.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthConfiguration.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthConfiguration.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthConfiguration~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthConfiguration.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Authorization/OAuthConstants.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthConstants.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthConstants.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthConstants~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthConstants.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Authorization/OAuthDiscovery.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthDiscovery.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthDiscovery.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthDiscovery~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthDiscovery.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Authorization/OAuthDiscoveryClient.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthDiscoveryClient.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthDiscoveryClient.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthDiscoveryClient~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthDiscoveryClient.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Authorization/OAuthErrors.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthErrors.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthErrors.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthErrors~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthErrors.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Authorization/OAuthModels.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthModels.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthModels.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthModels~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthModels.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Authorization/OAuthTokenEndpointClient.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthTokenEndpointClient.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthTokenEndpointClient.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthTokenEndpointClient~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthTokenEndpointClient.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Authorization/OAuthURLValidator.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthURLValidator.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthURLValidator.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthURLValidator~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthURLValidator.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Authorization/OAuthWWWAuthenticateParser.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthWWWAuthenticateParser.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthWWWAuthenticateParser.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthWWWAuthenticateParser~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/OAuthWWWAuthenticateParser.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Authorization/PKCE.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/PKCE.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/PKCE.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/PKCE~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/PKCE.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Authorization/TokenStorage.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/TokenStorage.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/TokenStorage.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/TokenStorage~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/TokenStorage.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Error.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Error.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Error.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Error~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Error.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/ID.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/ID.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/ID.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/ID~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/ID.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Icon.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Icon.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Icon.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Icon~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Icon.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Lifecycle.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Lifecycle.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Lifecycle.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Lifecycle~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Lifecycle.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Messages.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Messages.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Messages.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Messages~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Messages.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/PendingRequest.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/PendingRequest.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/PendingRequest.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/PendingRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/PendingRequest.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Transport.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Transport.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Transport.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Transport~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Transport.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Transports/HTTPClientTransport.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/HTTPClientTransport.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/HTTPClientTransport.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/HTTPClientTransport~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/HTTPClientTransport.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Transports/HTTPServer/HTTPRequestValidation.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/HTTPRequestValidation.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/HTTPRequestValidation.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/HTTPRequestValidation~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/HTTPRequestValidation.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Transports/HTTPServer/HTTPServerTypes.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/HTTPServerTypes.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/HTTPServerTypes.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/HTTPServerTypes~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/HTTPServerTypes.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Transports/HTTPServer/StatefulHTTPServerTransport.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/StatefulHTTPServerTransport.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/StatefulHTTPServerTransport.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/StatefulHTTPServerTransport~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/StatefulHTTPServerTransport.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Transports/HTTPServer/StatelessHTTPServerTransport.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/StatelessHTTPServerTransport.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/StatelessHTTPServerTransport.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/StatelessHTTPServerTransport~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/StatelessHTTPServerTransport.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Transports/InMemoryTransport.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/InMemoryTransport.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/InMemoryTransport.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/InMemoryTransport~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/InMemoryTransport.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Transports/NetworkTransport.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/NetworkTransport.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/NetworkTransport.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/NetworkTransport~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/NetworkTransport.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Transports/StdioTransport.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/StdioTransport.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/StdioTransport.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/StdioTransport~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/StdioTransport.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/UnitInterval.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/UnitInterval.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/UnitInterval.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/UnitInterval~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/UnitInterval.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Utilities/Cancellation.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Cancellation.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Cancellation.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Cancellation~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Cancellation.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Utilities/Ping.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Ping.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Ping.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Ping~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Ping.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Utilities/Progress.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Progress.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Progress.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Progress~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Progress.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Utilities/RequestContext.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/RequestContext.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/RequestContext.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/RequestContext~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/RequestContext.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Value.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Value.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Value.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Value~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Value.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Base/Versioning.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Versioning.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Versioning.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Versioning~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Versioning.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Client/Client.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Client.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Client.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Client~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Client.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Client/Elicitation.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Elicitation.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Elicitation.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Elicitation~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Elicitation.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Client/Roots.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Roots.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Roots.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Roots~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Roots.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Client/Sampling.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Sampling.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Sampling.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Sampling~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Sampling.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Extensions/Data+Extensions.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Data+Extensions.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Data+Extensions.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Data+Extensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Data+Extensions.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Server/Completion.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Completion.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Completion.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Completion~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Completion.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Server/Logging.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Logging.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Logging.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Logging~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Logging.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Server/Prompts.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Prompts.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Prompts.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Prompts~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Prompts.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Server/Resources.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Resources.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Resources.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Resources~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Resources.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Server/Server.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Server.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Server.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Server~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Server.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCP/Server/Tools.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Tools.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Tools.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Tools~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCP.build/Tools.swiftdeps"
+  }
+}

@@ -1,0 +1,4 @@
+module HeapModule {
+    header "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/HeapModule.build/HeapModule-Swift.h"
+    requires objc
+}

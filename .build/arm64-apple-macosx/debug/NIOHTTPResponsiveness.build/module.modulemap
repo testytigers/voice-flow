@@ -1,0 +1,4 @@
+module NIOHTTPResponsiveness {
+    header "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/NIOHTTPResponsiveness.build/NIOHTTPResponsiveness-Swift.h"
+    requires objc
+}

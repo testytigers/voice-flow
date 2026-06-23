@@ -1,0 +1,4 @@
+module CNIOPosix {
+    umbrella header "/Users/yahya/VoiceFlow/.build/checkouts/swift-nio/Sources/CNIOPosix/include/CNIOPosix.h"
+    export *
+}

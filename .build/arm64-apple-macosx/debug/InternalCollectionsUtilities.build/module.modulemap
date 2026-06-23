@@ -1,0 +1,4 @@
+module InternalCollectionsUtilities {
+    header "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/InternalCollectionsUtilities.build/InternalCollectionsUtilities-Swift.h"
+    requires objc
+}

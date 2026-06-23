@@ -1,0 +1,4 @@
+module NIOHTTPCompression {
+    header "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/NIOHTTPCompression.build/NIOHTTPCompression-Swift.h"
+    requires objc
+}

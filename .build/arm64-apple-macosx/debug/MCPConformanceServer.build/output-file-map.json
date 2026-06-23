@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCPConformanceServer.build/master.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCPConformance/Server/HTTPApp.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCPConformanceServer.build/HTTPApp.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCPConformanceServer.build/HTTPApp.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCPConformanceServer.build/HTTPApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCPConformanceServer.build/HTTPApp.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCPConformance/Server/main.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCPConformanceServer.build/main.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCPConformanceServer.build/main.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCPConformanceServer.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCPConformanceServer.build/main.swiftdeps"
+  }
+}

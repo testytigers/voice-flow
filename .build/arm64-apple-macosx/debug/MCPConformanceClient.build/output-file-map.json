@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCPConformanceClient.build/master.swiftdeps"
+  },
+  "/Users/yahya/VoiceFlow/.build/checkouts/swift-sdk/Sources/MCPConformance/Client/main.swift": {
+    "dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCPConformanceClient.build/main.d",
+    "object": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCPConformanceClient.build/main.swift.o",
+    "swiftmodule": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCPConformanceClient.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/yahya/VoiceFlow/.build/arm64-apple-macosx/debug/MCPConformanceClient.build/main.swiftdeps"
+  }
+}
