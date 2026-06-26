@@ -5,12 +5,19 @@ import os
 
 class AudioRecorder {
     private let logger = Logger(subsystem: "com.voiceflow", category: "audiorecorder")
+    private let audioWriteQueue = DispatchQueue(label: "com.voiceflow.audiowrite", qos: .userInitiated)
+    
     private var engine: AVAudioEngine?
     private var audioFileURL: URL?
     private var audioFile: AVAudioFile?
     private var isRecording = false
     
-    var currentFileURL: URL? { audioFileURL }
+    var currentFileURL: URL? {
+        let url = audioFileURL
+        let id = unsafeBitCast(self, to: UInt.self)
+        logger.info("[currentFileURL=\(url?.absoluteString ?? "nil") id=\(id)]")
+        return url
+    }
     
     enum AudioError: Error, LocalizedError {
         case permissionDenied
@@ -43,7 +50,7 @@ class AudioRecorder {
         // Get input node (microphone)
         let inputNode = engine.inputNode
         
-        // Create output file
+        // Create output file with 16kHz mono (whisper.cpp format)
         let tempDir = FileManager.default.temporaryDirectory
         audioFileURL = tempDir.appendingPathComponent("recording-\(Int(Date.now.timeIntervalSince1970)).wav")
         
@@ -57,21 +64,21 @@ class AudioRecorder {
         }
         
         // Install tap to capture audio
-        let format = inputNode.outputFormat(forBus: 0)
-        inputNode.installTap(onBus: 0, bufferSize: 1024, format: format) { [weak self] buffer, time in
+        let inputFormat = inputNode.outputFormat(forBus: 0)
+        inputNode.installTap(onBus: 0, bufferSize: 1024, format: inputFormat) { [weak self] buffer, time in
             guard let self = self, let audioFile = self.audioFile else { return }
-            do {
-                try audioFile.write(from: buffer)
-            } catch {
-                self.logger.error("Failed to write audio buffer: \(error.localizedDescription)")
-            }
+            // Write directly on audio thread (no do/try to avoid concurrency assertions)
+            try! audioFile.write(from: buffer)
         }
         
         // Start the engine
         try engine.start()
         isRecording = true
         
-        logger.info("Recording started at \(self.audioFileURL?.absoluteString ?? "unknown")")
+        logger.info("[Recording started at \(self.audioFileURL?.absoluteString ?? "unknown")]")
+        let id = unsafeBitCast(self, to: UInt.self)
+        logger.info("[instance id=\(id) startFileURL=\(self.audioFileURL?.absoluteString ?? "nil")]")
+        logger.info("Audio format: \(audioFormat.settings.description ?? "unknown")")
     }
     
     func stop() async {
@@ -81,7 +88,7 @@ class AudioRecorder {
         
         guard let engine = engine else { return }
         
-        // Remove tap
+        // Remove tap first (stops callbacks)
         let inputNode = engine.inputNode
         inputNode.removeTap(onBus: 0)
         
@@ -89,6 +96,10 @@ class AudioRecorder {
         engine.stop()
         self.engine = nil
         
-        logger.info("Recording stopped")
+        // Close the audio file to flush and finalize
+        audioFile = nil
+        
+        let id = unsafeBitCast(self, to: UInt.self)
+        logger.info("[instance id=\(id) Recording stopped]")
     }
 }

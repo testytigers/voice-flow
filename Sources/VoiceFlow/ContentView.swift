@@ -7,45 +7,34 @@ struct ContentView: View {
     let logger = Logger(subsystem: "com.voiceflow", category: "contentview")
     
     var body: some View {
-        VStack(spacing: 0) {
-            // Header
-            headerView
-                .padding(.horizontal)
-                .padding(.vertical, 12)
+        ZStack {
+            // Background
+            Color(NSColor.windowBackgroundColor).ignoresSafeArea()
             
-            Divider()
-            
-            // Messages list
-            ScrollView {
-                ScrollViewReader { proxy in
-                    LazyVStack(spacing: 12) {
-                        ForEach(voiceModel.messages) { message in
-                            MessageBubble(message: message)
-                                .id(message.id)
-                        }
-                        
-                        if voiceModel.isTranscribing {
-                            TranscribingIndicator()
-                        }
-                        
-                        if voiceModel.isGenerating {
-                            GeneratingIndicator()
-                        }
-                    }
-                    .padding()
+            // Main content
+            VStack(spacing: 0) {
+                // Header
+                headerView
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 12)
+                
+                Divider()
+                
+                // Messages list - fills all available space
+                messageListView
+                
+                // Error message (if any)
+                if let error = voiceModel.errorMessage {
+                    errorView(error: error)
+                        .padding(.horizontal, 16)
+                        .padding(.bottom, 4)
                 }
+                
+                // Controls
+                controlsView
+                    .padding(16)
             }
-            
-            // Status bar
-            if let error = voiceModel.errorMessage {
-                errorView(error: error)
-            }
-            
-            // Controls
-            controlsView
-                .padding()
         }
-        .background(Color(NSColor.windowBackgroundColor))
         .onAppear {
             logger.info("ContentView appeared")
         }
@@ -79,7 +68,6 @@ struct ContentView: View {
                       voiceModel.isGenerating ? Color.blue :
                       Color.green)
                 .frame(width: 8, height: 8)
-                .animation(.easeInOut, value: voiceModel.isConnected)
             
             Text(statusText)
                 .font(.caption)
@@ -91,7 +79,72 @@ struct ContentView: View {
         if voiceModel.isRecording { return "Recording..." }
         if voiceModel.isTranscribing { return "Transcribing..." }
         if voiceModel.isGenerating { return "Thinking..." }
-        return "Ready"
+        return voiceModel.isConnected ? "Connected" : "No connection"
+    }
+    
+    private var messageListView: some View {
+        ScrollView {
+            ScrollViewReader { proxy in
+                LazyVStack(spacing: 12) {
+                    if voiceModel.messages.isEmpty && !voiceModel.isRecording && !voiceModel.isTranscribing {
+                        // Empty state
+                        VStack(spacing: 16) {
+                            Image(systemName: "mic.circle")
+                                .font(.system(size: 48))
+                                .foregroundColor(.blue.opacity(0.5))
+                            
+                            Text("Tap the microphone to start")
+                                .font(.title3)
+                                .foregroundColor(.secondary)
+                            
+                            Text("Record your voice and VoiceFlow will transcribe and respond")
+                                .font(.caption)
+                                .foregroundColor(.secondary.opacity(0.7))
+                                .multilineTextAlignment(.center)
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding(.top, 60)
+                    }
+                    
+                    ForEach(voiceModel.messages) { message in
+                        MessageBubble(message: message)
+                            .id(message.id)
+                    }
+                    
+                    if voiceModel.isTranscribing {
+                        TranscribingIndicator()
+                            .transition(.move(edge: .bottom).combined(with: .opacity))
+                    }
+                    
+                    if voiceModel.isGenerating {
+                        GeneratingIndicator()
+                            .transition(.move(edge: .bottom).combined(with: .opacity))
+                    }
+                }
+                .padding()
+                .onAppear {
+                    scrollToBottom(proxy: proxy)
+                }
+                .onChange(of: voiceModel.messages.count) {
+                    scrollToBottom(proxy: proxy)
+                }
+                .onChange(of: voiceModel.isTranscribing) {
+                    if voiceModel.isTranscribing {
+                        scrollToBottom(proxy: proxy)
+                    }
+                }
+            }
+        }
+        .background(Color.clear)
+    }
+    
+    private func scrollToBottom(proxy: ScrollViewProxy) {
+        // Scroll to the last message
+        if let lastMessage = voiceModel.messages.last {
+            DispatchQueue.main.async {
+                proxy.scrollTo(lastMessage.id, anchor: .bottom)
+            }
+        }
     }
     
     private var controlsView: some View {
@@ -183,8 +236,8 @@ struct MessageBubble: View {
             
             Spacer()
         }
-        .padding(.horizontal)
-        .padding(.vertical, 8)
+        .padding(.horizontal, 12)
+        .padding(.vertical, 4)
     }
     
     private var avatarView: some View {

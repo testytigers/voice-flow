@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "VoiceFlow",
     platforms: [
-        .macOS(.v13)
+        .macOS(.v14)
     ],
     dependencies: [
         .package(url: "https://github.com/modelcontextprotocol/swift-sdk.git", from: "0.11.0"),

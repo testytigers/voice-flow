@@ -15,7 +15,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ notification: NSNotification) {
         Task {
-            await voiceModel.connectMCP()
+            await voiceModel.connectServers()
         }
         setupHotkey()
         logger.info("AppDelegate: Application launched, hotkey setup complete")

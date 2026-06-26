@@ -1,6 +1,5 @@
 import Foundation
 import os
-import MCP
 
 @MainActor
 class VoiceModel: ObservableObject {
@@ -12,8 +11,8 @@ class VoiceModel: ObservableObject {
     @Published var isConnected = false
     
     private let logger = Logger(subsystem: "com.voiceflow", category: "voicemodel")
-    private var mcpClient: MCPClient?
     private var audioRecorder: AudioRecorder?
+    private let httpClient = HTTPClient()
     
     struct Message: Identifiable, Equatable {
         let id = UUID()
@@ -30,22 +29,21 @@ class VoiceModel: ObservableObject {
         logger.info("VoiceModel initialized")
     }
     
-    func connectMCP() async {
+    func connectServers() async {
         do {
-            logger.info("Connecting to MCP servers...")
+            logger.info("Connecting to whisper.cpp and llama-server...")
+            let whisperOk = await httpClient.testConnection(to: URL(string: "http://localhost:8081")!, endpoint: "/health")
+            let llmOk = await httpClient.testConnection(to: URL(string: "http://localhost:8080")!, endpoint: "/api/v1/models")
             
-            mcpClient = MCPClient()
-            try await mcpClient?.connect()
-            
-            isConnected = true
-            logger.info("✓ MCP servers connected successfully")
-            
-            // List available tools for debugging
-            await mcpClient?.listAvailableTools()
-            
+            if whisperOk || llmOk {
+                isConnected = true
+                logger.info("✓ At least one server connected")
+            } else {
+                errorMessage = "Could not connect to servers. Ensure whisper.cpp (:8081) and llama-server (:8080) are running."
+                isConnected = false
+            }
         } catch {
-            logger.error("MCP connection failed: \(error.localizedDescription)")
-            errorMessage = "Failed to connect to AI servers: \(error.localizedDescription)"
+            errorMessage = "Server connection failed: \(error.localizedDescription)"
             isConnected = false
         }
     }
@@ -67,6 +65,8 @@ class VoiceModel: ObservableObject {
         
         do {
             let recorder = AudioRecorder()
+            let recorderId = unsafeBitCast(recorder, to: UInt.self)
+            logger.info("[VoiceModel startRecording: recorder=\(recorderId)]")
             audioRecorder = recorder
             try await recorder.start()
             logger.info("Recording started")
@@ -82,32 +82,57 @@ class VoiceModel: ObservableObject {
     func stopRecording() async {
         guard isRecording, let recorder = audioRecorder else { return }
         
+        let recorderId = unsafeBitCast(recorder, to: UInt.self)
+        logger.info("[VoiceModel stopRecording: recorder=\(recorderId), isRecording=\(self.isRecording)]")
         isRecording = false
         await recorder.stop()
+        logger.info("Audio recorder stopped")
+        
+        // Save URL BEFORE clearing recorder
+        let audioURL = recorder.currentFileURL
+        logger.info("[VoiceModel audioURL=\(audioURL?.absoluteString ?? "nil")]")
+        
+        audioRecorder = nil
         
         // Start transcription
-        await transcribeAudio()
+        if let url = audioURL {
+            logger.info("Starting transcription for: \(url.path)")
+            await transcribeAudio(at: url)
+        } else {
+            logger.warning("No audio file recorded")
+            isTranscribing = false
+            errorMessage = "No audio was recorded."
+        }
     }
     
     @MainActor
-    private func transcribeAudio() async {
-        guard let audioURL = audioRecorder?.currentFileURL,
-              let mcpClient = mcpClient else { return }
-        
+    private func transcribeAudio(at url: URL) async {
         isTranscribing = true
         errorMessage = nil
+        logger.info("Starting transcription for: \(url.path)")
         
         do {
-            let transcription = try await mcpClient.transcribeAudio(fileURL: audioURL)
-            logger.info("Transcription complete: \(transcription)")
+            let transcription = try await httpClient.transcribeAudio(from: url, serverURL: URL(string: "http://localhost:8081")!)
+            logger.info("Transcription result: '\(transcription)'")
+            logger.info("Transcription trimmed: '\(transcription.trimmingCharacters(in: .whitespacesAndNewlines))'")
+            
+            let trimmed = transcription.trimmingCharacters(in: .whitespacesAndNewlines)
+            if trimmed.isEmpty || trimmed == "[BLANK_AUDIO]" {
+                logger.warning("Transcription is empty or blank audio")
+                messages.append(Message(role: "user", content: "(silence detected)"))
+                isTranscribing = false
+                return
+            }
+            
+            logger.info("Processing text for UI update")
             await processText(transcription)
+            logger.info("Text processed successfully, messages count: \(self.messages.count)")
             
         } catch {
             logger.error("Transcription failed: \(error.localizedDescription)")
             errorMessage = "Transcription failed: \(error.localizedDescription)"
+            isTranscribing = false
         }
-        
-        isTranscribing = false
     }
     
     @MainActor
@@ -123,24 +148,22 @@ class VoiceModel: ObservableObject {
     
     @MainActor
     private func generateResponse(for prompt: String) async {
-        guard !prompt.isEmpty,
-              let mcpClient = mcpClient else { return }
-        
         isGenerating = true
         errorMessage = nil
         
         do {
-            let response = try await mcpClient.generateResponse(
+            let response = try await httpClient.generateResponse(
                 prompt: prompt,
-                context: messages
+                messages: messages,
+                serverURL: URL(string: "http://localhost:8080")!
             )
             
-            logger.info("Response generated: \(response)")
+            logger.info("Response: \(response)")
             messages.append(Message(role: "assistant", content: response))
             
         } catch {
-            logger.error("Response generation failed: \(error.localizedDescription)")
-            errorMessage = "Failed to generate response: \(error.localizedDescription)"
+            logger.error("Response failed: \(error.localizedDescription)")
+            messages.append(Message(role: "assistant", content: "Server error: \(error.localizedDescription)"))
         }
         
         isGenerating = false
